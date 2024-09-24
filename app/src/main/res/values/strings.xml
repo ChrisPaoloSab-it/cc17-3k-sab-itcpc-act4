@@ -3,4 +3,6 @@
     <string name="enter_init_amount">enter initial amount</string>
     <string name="tip_amount">Tip Amount</string>
     <string name="zeroTip">$0.00</string>
+    <string name="calculate">Calculate</string>
+    <string name="dollarSign">$</string>
 </resources>
