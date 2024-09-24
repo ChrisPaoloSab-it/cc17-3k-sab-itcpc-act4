@@ -1,5 +1,6 @@
 package com.example.tipcalculator
 
+import android.icu.text.NumberFormat
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -30,7 +31,7 @@ class MainActivity : AppCompatActivity() {
 
         button.setOnClickListener {
             val tip = tipCalculator()
-            val formattedTip = String.format("%.2f", tip)
+            val formattedTip = NumberFormat.getCurrencyInstance().format(tip)
             tipResult.text = formattedTip
         }
     }
