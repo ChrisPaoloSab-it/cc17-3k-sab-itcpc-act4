@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Tip Calculator</string>
+    <string name="enter_init_amount">enter initial amount</string>
+    <string name="tip_amount">Tip Amount</string>
+    <string name="zeroTip">$0.00</string>
 </resources>
