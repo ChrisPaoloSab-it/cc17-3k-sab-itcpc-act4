@@ -14,12 +14,13 @@
         android:backgroundTint="#006800"
         android:enabled="true"
         android:text="@string/calculate"
+        android:textColor="#FFFFFF"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.808"
+        app:layout_constraintVertical_bias="0.952"
         tools:visibility="visible" />
 
     <TextView
@@ -52,18 +53,20 @@
         android:hint="@string/zeroTip"
         android:inputType="numberDecimal"
         android:textAlignment="center"
+        android:textColor="@color/grey_8001"
         android:textColorHint="@color/grey_800"
         android:textColorLink="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.829"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.128" />
+        app:layout_constraintVertical_bias="0.262" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="0dp"
-        android:layout_height="32dp"
+        android:layout_width="305dp"
+        android:layout_height="38dp"
         android:background="#BBFFBB"
         android:fontFamily="sans-serif"
         android:paddingTop="5dp"
@@ -73,45 +76,46 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.037"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.244" />
+        app:layout_constraintVertical_bias="0.197" />
 
     <RadioGroup
         android:id="@+id/tipChoices"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="305dp"
+        android:layout_height="200dp"
         android:background="#BBFFBB"
-        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.037"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.6">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.569">
 
         <RadioButton
             android:id="@+id/amazing"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="AMAZING! (20%)"
             android:textColor="@color/black"
-            android:textSize="20sp" />
+            android:textSize="18dp" />
 
         <RadioButton
             android:id="@+id/good"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Good! (18%)"
             android:textColor="@color/black"
-            android:textSize="20sp" />
+            android:textSize="18dp" />
 
         <RadioButton
             android:id="@+id/ok"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="ok (15%)"
             android:textColor="@color/black"
-            android:textSize="20sp" />
+            android:textSize="18dp" />
     </RadioGroup>
 
     <TextView
@@ -126,21 +130,21 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.325"
+        app:layout_constraintHorizontal_bias="0.699"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.546" />
+        app:layout_constraintVertical_bias="0.436" />
 
     <Switch
         android:id="@+id/roundUp"
         android:layout_width="71dp"
-        android:layout_height="wrap_content"
+        android:layout_height="28dp"
         app:layout_constraintBottom_toTopOf="@+id/calculatebutton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.733"
+        app:layout_constraintHorizontal_bias="0.865"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.733"
+        app:layout_constraintVertical_bias="0.532"
         tools:ignore="UseSwitchCompatOrMaterialXml" />
 
     <TextView
@@ -150,9 +154,10 @@
         android:text="@string/tip_amount"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.757"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.688" />
+        app:layout_constraintVertical_bias="0.704" />
 
     <TextView
         android:id="@+id/tipTotal"
@@ -163,9 +168,10 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.79"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.646" />
+        app:layout_constraintVertical_bias="0.611" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
